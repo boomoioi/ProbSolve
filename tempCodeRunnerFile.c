@@ -1,0 +1,1 @@
+10 * decimal_binary(n / 2)
