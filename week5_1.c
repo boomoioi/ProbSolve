@@ -1,10 +1,6 @@
 #include <stdio.h>
-
-int main()
+int cmp(int a, int b)
 {
-    int a, b;
-    scanf("%d", &a);
-    scanf("%d", &b);
     if (a > b)
     {
         printf("%d", a);
@@ -13,4 +9,13 @@ int main()
     {
         printf("%d", b);
     }
+}
+
+int main()
+{
+    int a, b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    cmp(a, b);
+    return 0;
 }

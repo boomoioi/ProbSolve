@@ -1,18 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+int cmpfunc(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
+}
 
 int main()
 {
-    int a[10];
-    for (int i = 0; i < 10; i++)
-    {
-        scanf("%d", &a[i]);
-    }
-    for (int i = 1; i < 9; i++)
-    {
-        if (a[i - 1] % 2 != 0 && a[i + 1] % 2 != 0)
-        {
-            printf("%d ", a[i]);
-        }
-    }
-    return 0;
+    int a[3];
+    scanf("%d", &a[0]);
+    scanf("%d", &a[1]);
+    scanf("%d", &a[2]);
+
+    qsort(a, 3, sizeof(int), cmpfunc);
+    printf("Min : %d\nMid : %d\nMax : %d", a[0], a[1], a[2]);
 }
