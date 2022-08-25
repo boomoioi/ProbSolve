@@ -5,7 +5,7 @@ int main(){
     int day;
     printf("Enter principle : ");
     scanf("%f", &first);   
-    printf("Enter interest(\%) : ");
+    printf("Enter interest(%) : ");
     scanf("%f", &interest);
     printf("Enter days : ");
     scanf("%d", &day);
