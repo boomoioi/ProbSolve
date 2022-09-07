@@ -1,1 +1,1 @@
-    printf("\n");
+printf("Min : %d\nMid : %d\nMax : %d", a[0], a[1], a[2]);
