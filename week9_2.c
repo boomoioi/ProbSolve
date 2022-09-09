@@ -11,7 +11,6 @@ void main()
     while(sqrt != temp){
         temp = sqrt;
         sqrt = ( number/temp + temp) / 2;
-        printf("%.20f\n", sqrt);
     }
 
     printf("%f", sqrt);

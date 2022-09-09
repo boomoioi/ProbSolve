@@ -1,40 +1,32 @@
+// จตุรัสกล 78
+
 #include <stdio.h>
+
+int verti(int (*arr)[M]), int len, int col)
+{
+    int sum = 0;
+    for (int i = 0; i < len; i++)
+    {
+        printf("%d ", i);
+        printf("%d\n",arr[len][col]);
+        sum += arr[len][col];
+    }
+    // printf("%d", sum);
+    return sum;
+}
 
 int main()
 {
-    int a, width, timer;
+    int a;
     scanf("%d", &a);
-    if(a%2==0){
-        width = a-1;
-    } else {
-        width = a;
-    }
-
-    for(int i=0; i<width/2; i++){
-        printf("_");
-    }
-    printf("*");
-    for(int i=0; i<width/2; i++){
-        printf("_");
-    }
-    printf("\n");
-
-
-    for(int i=0; i<a-2; i++){
-        for(int j=0; j<width/2-i-1; j++){
-            printf("_");
+    int arr[a][a];
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+            scanf("%d", &arr[i][j]);
         }
-        printf("*");
-        printf("\n");
     }
 
-
-    for(int i=0; i<width/2; i++){
-        printf("_");
-    }
-    printf("*");
-    for(int i=0; i<width/2; i++){
-        printf("_");
-    }
-    return 0;
+    verti(arr, a, 0);
 }
