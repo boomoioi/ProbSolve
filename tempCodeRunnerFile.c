@@ -1,1 +1,2 @@
-    printf("%d", sum);
+
+    if(s == reversed){
